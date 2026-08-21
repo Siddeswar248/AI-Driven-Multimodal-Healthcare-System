@@ -11,6 +11,8 @@ Continuous Vitals Telemetry: Real-time tracking of critical physiological parame
 Remote Doctor Dashboard: A secure interface where doctors can monitor live patient data and visually assess their condition via a remote camera feed.
 Smart Medication Management: Doctors can remotely prescribe medications and configure specific schedules (morning, afternoon, evening), which trigger automated local alerts on the patient's device.
 Voice-Activated Accessibility: An integrated natural-language AI voice assistant allows patients with limited mobility to interact with the system and control home automation features hands-free.
+
+
 Hardware & Tech Stack
 Component	Purpose
 ESP32	Primary microcontroller for sensor data acquisition and IoT cloud connectivity.
@@ -18,6 +20,7 @@ ESP32-CAM	Provides a live visual feed of the patient's environment to the remote
 NodeMCU	Manages local home automation relays triggered by patient voice commands.
 Biometric Sensors	Captures Electrocardiogram (ECG), Heart Rate (BPM), Blood Oxygen Saturation (SpO₂), and Body Temperature.
 Blynk IoT Platform	Serves as the cloud infrastructure for data visualization, the doctor's dashboard, and prescription scheduling.
+
 System Workflow
 Data Acquisition: The ESP32 continuously polls the biometric sensors for the patient's vital signs.
 Cloud Transmission: Sensor data and live video are securely published to the Blynk IoT platform.
